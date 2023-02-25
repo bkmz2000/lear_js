@@ -7,6 +7,8 @@ export class Product {
     }
 }
 
+// Assumptions: all string queries are case insensetive
+// None of the string queries contain any of ['<', '>', '<=', '>=']
 export class ProductList {
     constructor(arr) {
         this.list = arr.map((arg) => new Product(arg));
